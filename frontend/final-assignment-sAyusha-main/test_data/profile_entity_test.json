@@ -1,0 +1,18 @@
+[
+    {
+        "_id": "64c64237a327766ee7d5c40a",
+        "fullname": "ayusha shrestha",
+        "username": "__ayusha16",
+        "email": "ayushastha002@gmail.com",
+        "phone": "9865258566",
+        "password": "Ayusha123",
+        "profileImage": "IMG-1690643300310.jpg",
+        "savedArts" : [
+            "64c54b858aea68dd5072780a",
+            "64c528d18aea68dd50727619"
+        ],
+        "__v": 7,
+        "isUserLoggedIn": true
+
+    }
+]

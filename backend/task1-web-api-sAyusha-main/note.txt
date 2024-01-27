@@ -1,0 +1,160 @@
+  {
+    "contentImg": [
+      "image1.jpg",
+      "image2.jpg"
+    ],
+    "title": "Love & Hate",
+    "creator": "Juliana Yoshida",
+    "description": "This is the content of my art auction app.",
+    "startingBid": 1085.99
+  },
+  {
+    "contentImg": [
+      "image1.jpg",
+      "image2.jpg"
+    ],
+    "title": "Starry Night",
+    "creator": "Vincent van Gogh",
+    "description": "This is the content of my art auction app.",
+    "startingBid": 1500.39
+  },
+  {
+    "contentImg": [
+      "image1.jpg",
+      "image2.jpg"
+    ],
+    "title": "Starry",
+    "creator": "Vincent van Gogh",
+    "description": "This is the content of my art auction app.",
+    "startingBid": 589.39
+  },
+  {
+    "contentImg": [
+      "image1.jpg",
+      "image2.jpg"
+    ],
+    "title": "Women Empowerment",
+    "creator": "Reena Mahato",
+    "description": "This is the content of my art auction app.",
+    "startingBid": 1089.39
+  }
+
+{
+  "fullname": "Ayusha Shrestha",
+  "username": "__ayusha16",
+  "email": "ayushastha002@gmail.com",
+  "phone": "9865258566",
+  "password": "Clover123"
+}
+
+{
+  "username": "__ayusha16",
+  "password": "Clover123"
+}
+
+{
+  "bidAmount": 600.99
+}
+
+{
+  "orderItems": [
+    {
+      "image": "IMG-1690642603910.jpg",
+      "title": "Starry Night",
+      "description": "This is the content of my art auction app.",
+      "art": "64c528d18aea68dd50727619"
+    }
+  ],
+  "shippingAddress": {
+    "fullname": "Jasmine Osti",
+    "address": "123 Main St",
+    "postalCode": "12345",
+    "city": "Kathmandu",
+    "request": "Example Request"
+  },
+  "paymentMethod": "COD",
+  "bidAmount": 1400,
+  "shippingPrice": 10,
+  "totalAmount": 1410
+}
+
+
+1. User Login and register
+http://localhost:3000/api/users/register --> post
+http://localhost:3000/api/users/login --> post
+
+2. Update and Delete user profile
+http://localhost:3000/api/users/userid --> get
+http://localhost:3000/api/users/userid --> put
+
+3. Artwork, Search Artwork Update and Delete Artwork, Save Artwork
+http://localhost:3000/api/arts --> postAll /getAll
+http://localhost:3000/api/arts/search --> get
+http://localhost:3000/api/arts/save/artid --> post
+http://localhost:3000/api/arts/save/artid --> delete
+http://localhost:3000/api/arts/artid --> get
+http://localhost:3000/api/arts/artid --> put
+http://localhost:3000/api/arts/artid --> delete
+
+4. Bidding
+http://localhost:3000/arts/6489667ed3b3cc237aca1323/bid --> post
+
+5. Order Summary, Payment, Shipping Address
+http://localhost:3000/api/orders--> post
+http://localhost:3000/api/orders--> get
+http://localhost:3000/api/orders/:id--> delete
+http://localhost:3000/api/orders/:id--> getByID
+{
+  "orderItems": [
+    {
+      "image": "image-url",
+      "title": "Starry Night",
+      "description": "This is the content of my art auction app.",
+      "art": "649aa64287d8da79cf0ccda4"
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Kukki Shrestha",
+    "address": "123 Main St",
+    "postalCode": "12345",
+    "city": "Kathmandu",
+    "request": "Example Request"
+  },
+  "paymentMethod": "COD",
+  "itemsPrice": 1400,
+  "shippingPrice": 10,
+  "totalPrice": 1410
+}
+
+{
+  "_id": {
+    "$oid": "64d4600beaae4aea4f618cf8"
+  },
+  "image": "IMG-1691639700869.jpg",
+  "title": "Rococo In The Swing",
+  "creator": "JStudio",
+  "description": "We can see a young woman fly through the air inside a lovely garden wearing a voluminous pink dress. Her suspension above the ground is made possible by a swing made of a seat cushioned in red velvet and two ropes fastened to the knobby branches of a huge tree.",
+  "startingBid": 1500.99,
+  "endingDate": {
+    "$date": "2023-08-31T05:44:00Z"
+  },
+  "artExpired": false,
+  "bidAmount": 0,
+  "highestBidAmount": 3000,
+  "artType": "Recent",
+  "categories": "Painting",
+  "user": {
+    "$oid": "64cbf5051cfed7e1cfa84cdb"
+  },
+  "upcomingDate": {
+    "$date": "2023-08-10T03:56:59.345Z"
+  },
+  "__v": 0,
+  "highestBidder": {
+    "$oid": "64ce8398788963c314ca0594"
+  }
+}
+
+6. Token 1: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OWFhNGJmODdkOGRhNzljZjBjY2Q5OSIsInVzZXJuYW1lIjoiX19rdWtraTE2IiwiaWF0IjoxNjg3ODU2MzI4LCJleHAiOjE2ODgwMjkxMjh9.ACl6O2bG0oaq2vLK47CfLbgCBWjgqFjUoMzpHXKOuOY
+    Token 2: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OWFhNWJhODdkOGRhNzljZjBjY2RhMCIsInVzZXJuYW1lIjoiX19heXVzaGExNiIsImlhdCI6MTY4Nzg1NjU4NCwiZXhwIjoxNjg4MDI5Mzg0fQ.SBUR7IOKO5f_yzF-PD6DDjLKBRYhF3lZ29Bi-dO1O3w
+

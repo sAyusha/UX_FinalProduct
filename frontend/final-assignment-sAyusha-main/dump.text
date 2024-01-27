@@ -1,0 +1,39 @@
+Column(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                child: " " Text("12 Jul"),
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                width: 240,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  // mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 200,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        image: " " DecorationImage(
+                          image: NetworkImage(
+                            'https://i.pinimg.com/550x/fe/37/32/fe37325df5487b9cf83671c3a7f91c81.jpg',
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    ListTile(
+                      title: " " Text("iwdidowiicjf"),
+                      subtitle: " " Text("avhaahduad"),
+                      trailing: IconButton(
+                        onPressed: (){}, 
+                        icon: " " Icon(Icons.notification_add)
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          )

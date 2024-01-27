@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "177156476684",
+    "project_id": "artalyst-2d1d1",
+    "storage_bucket": "artalyst-2d1d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177156476684:android:1933128755627894ef8329",
+        "android_client_info": {
+          "package_name": "com.softwarica.app.flutter_final_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177156476684-rvk70p7cnn8qppepeuvkpai89sk6dj4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK2OiLzdefun-yJF4uFMi8eiCl--viWsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177156476684-rvk70p7cnn8qppepeuvkpai89sk6dj4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
