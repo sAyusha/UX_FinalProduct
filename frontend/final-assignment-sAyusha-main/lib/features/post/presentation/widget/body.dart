@@ -126,6 +126,9 @@ class _BodyState extends ConsumerState<Body> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           ElevatedButton.icon(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: AppColorConstant.primaryAccentColor,
+                            ),
                             onPressed: () {
                               checkCameraPermission();
                               _browseImage(ref, ImageSource.camera);
@@ -139,6 +142,9 @@ class _BodyState extends ConsumerState<Body> {
                             ),
                           ),
                           ElevatedButton.icon(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: AppColorConstant.primaryAccentColor,
+                            ),
                             onPressed: () {
                               _browseImage(ref, ImageSource.gallery);
                               Navigator.pop(context);

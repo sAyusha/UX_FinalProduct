@@ -9,6 +9,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../core/common/components/rounded_button_field.dart';
 import '../../../../../core/common/widget/semi_big_text.dart';
 import '../../../../../core/common/widget/small_text.dart';
+import '../../../../bidding/presentation/view/bidding/helper_page.dart';
 import '../../../../home/domain/entity/home_entity.dart';
 // import '../../../../home/presentation/viewmodel/home_viewmodel.dart';
 import '../../../../navbar/presentation/view/bottom_navigation/bottom_navigation_bar.dart';
@@ -168,6 +169,23 @@ class _ArtDetailsViewState extends ConsumerState<ArtDetailsView> with TickerProv
               ),
               SizedBox(height: isTablet ? 15 : 5),
               Creator(art: art),
+              SizedBox(height: isTablet ? 15 : 10),
+              // helper page
+              TextButton(
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const BiddingHelperPage(),
+                    ),
+                  );
+                }, 
+                child: SemiBigText(
+                  text: 'Bidding Helper', 
+                  spacing: 0,
+                  color: AppColorConstant.blueTextColor,
+                )
+              ),
               SizedBox(height: isTablet ? 15 : 10),
               const SemiBigText(text: "Top Bidders", spacing: 0),
               SizedBox(height: isTablet ? 15 : 10),
